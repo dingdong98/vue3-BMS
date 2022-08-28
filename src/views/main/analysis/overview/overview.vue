@@ -47,7 +47,6 @@ export default defineComponent({
 
   .contain {
     font-size: 20px;
-    color: blue;
   }
   p {
     padding: 10px;
