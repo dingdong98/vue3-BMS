@@ -1,13 +1,17 @@
+/* 页面布局 */
 <template>
   <div class="main">
+    <!-- 侧边栏布局 -->
     <el-container class="main-content">
       <el-aside :width="isCollapse ? '60px' : '210px'">
         <nav-menu :collapse="isCollapse" />
       </el-aside>
+      <!-- 顶部布局 -->
       <el-container class="page">
         <el-header class="page-header">
           <nav-header @foldChange="handleFoldChange" />
         </el-header>
+        <!-- 展示页面布局 -->
         <el-main class="page-content">
           <div class="page-info">
             <router-view></router-view>

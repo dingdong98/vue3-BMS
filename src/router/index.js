@@ -1,6 +1,8 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import localCache from '@/utils/cache'
 import { firstMenu } from '@/utils/map-menus'
+import localCache from '@/utils/cache'
+
+// 路由表
 const routes = [
   {
     path: '/',
@@ -23,6 +25,7 @@ const routes = [
   }
 ]
 
+// 注册路由
 const router = createRouter({
   history: createWebHistory(),
   routes

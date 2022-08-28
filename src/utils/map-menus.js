@@ -6,6 +6,8 @@ export function mapMenusToRoutes(userMenus) {
 
   // 1.先加载默认所有routes路由映射
   const allRoutes = []
+
+  
   //调用webpack内置方法拿到路由文件路径
   const routeFiles = require.context('../router/main', true, /\.js/)
   routeFiles.keys().forEach((key) => {
